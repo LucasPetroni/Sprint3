@@ -5,6 +5,7 @@ export const ListaProdutos = [
     desc: "Motor com falha",
     img: "https://picsum.photos/100/100",
     endereco: "Rua da Consolação, 1234 - São Paulo - SP",
+    situacao: "Em Andamento",
   },
   {
     id: 188,
@@ -12,6 +13,7 @@ export const ListaProdutos = [
     desc: "Caminhao de 2 carretas tombada",
     img: "https://picsum.photos/100/100",
     endereco: "Rua da Alfândega, 567 - Salvador - BA",
+    situacao: "Concluído",
   },
   {
     id: 190,
@@ -19,6 +21,7 @@ export const ListaProdutos = [
     desc: "Caminhao atolado",
     img: "https://picsum.photos/100/100",
     endereco: "Rua XV de Novembro, 789 - Curitiba - PR",
+    situacao: "Cancelado",
   },
   {
     id: 276,
@@ -26,5 +29,6 @@ export const ListaProdutos = [
     desc: "5 peneus furados",
     img: "https://picsum.photos/100/100",
     endereco: "Rua dos Goianos, 123 - Anápolis - GO",
+    situacao: "Em Andamento",
   },
 ];

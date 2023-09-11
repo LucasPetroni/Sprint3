@@ -3,6 +3,7 @@
 .container-chamados {
   text-align: center;
   margin: 50px;
+  height: 100vh;
 }
 
 h1 {
@@ -36,6 +37,21 @@ h1 {
 .Tabela a {
   text-decoration: none;
   color: #000;
+}
+
+.Tabela td.em-andamento {
+  font-weight: bold;
+  color: rgb(0, 166, 231);
+}
+
+.Tabela td.cancelado {
+  font-weight: bold;
+  color: red;
+}
+
+.Tabela td.concluido {
+  font-weight: bold;
+  color: #21da0d;
 }
 
 @media screen and (max-width: 768px) {

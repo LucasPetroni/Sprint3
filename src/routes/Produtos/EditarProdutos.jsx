@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { ListaProdutos } from "../../components/ListaProdutos";
+import "../../styles/editarChamado.css";
 
 export default function EditarProdutos() {
   document.title = "Editar Produtos";
@@ -19,6 +20,7 @@ export default function EditarProdutos() {
     desc: produtoFiltrado.desc,
     img: produtoFiltrado.img,
     endereco: produtoFiltrado.endereco,
+    situacao: produtoFiltrado.situacao,
   });
 
   const handleChange = (event) => {
@@ -38,66 +40,82 @@ export default function EditarProdutos() {
 
     ListaProdutos.splice(indice, 1, produto);
 
-    //Redirecionando após realizar a edição do produto filtrado
     navigate("/produtos");
   };
 
   return (
     <>
-      <h1>EditarProdutos</h1>
+      <div className="editar-produto">
+        <div className="container-editarProduto">
+          <div class="container-tela">
+            <h1>Editar Chamados</h1>
+          </div>
 
-      <div>
-        <form onSubmit={handleSubmit}>
-          <fieldset>
-            <legend>Chamdo Selecionado</legend>
-            <div>
-              <label htmlFor="idNome">Nome</label>
-              <input
-                type="text"
-                name="nome"
-                id="idNome"
-                onChange={handleChange}
-                value={produto.nome}
-              />
-            </div>
-            <div>
-              <label htmlFor="idDesc">Descrição</label>
-              <input
-                type="text"
-                name="desc"
-                id="idDesc"
-                onChange={handleChange}
-                value={produto.desc}
-              />
-            </div>
-            <div>
-              <label htmlFor="idImg">Imagem</label>
-              <input
-                type="text"
-                name="Img"
-                id="idImg"
-                onChange={handleChange}
-                value={produto.img}
-              />
-            </div>
-            <div>
-              <label htmlFor="idenderco">Endereço</label>
-              <input
-                type="text"
-                name="endereco"
-                id="idendereco"
-                onChange={handleChange}
-                value={produto.endereco}
-              />
-            </div>
-            <div>
-              <button>EDITAR</button>
-            </div>
-          </fieldset>
-        </form>
+          <div>
+            <form onSubmit={handleSubmit}>
+              <fieldset>
+                <legend>Chamado ID: {produto.id}</legend>
+                <div>
+                  <label htmlFor="idNome">Nome</label>
+                  <input
+                    type="text"
+                    name="nome"
+                    id="idNome"
+                    onChange={handleChange}
+                    value={produto.nome}
+                  />
+                </div>
+                <div>
+                  <label htmlFor="idDesc">Descrição</label>
+                  <input
+                    type="text"
+                    name="desc"
+                    id="idDesc"
+                    onChange={handleChange}
+                    value={produto.desc}
+                  />
+                </div>
+                <div>
+                  <label htmlFor="idImg">Imagem</label>
+                  <input
+                    type="text"
+                    name="Img"
+                    id="idImg"
+                    onChange={handleChange}
+                    value={produto.img}
+                  />
+                </div>
+                <div>
+                  <label htmlFor="idenderco">Endereço</label>
+                  <input
+                    type="text"
+                    name="endereco"
+                    id="idendereco"
+                    onChange={handleChange}
+                    value={produto.endereco}
+                  />
+                </div>
+                <div>
+                  <label htmlFor="idsituacao">Situação</label>
+                  <select
+                    name="situacao"
+                    id="idsituacao"
+                    onChange={handleChange}
+                    value={produto.situacao}
+                  >
+                    <option value="Em Andamento">Em Andamento</option>
+                    <option value="Concluído">Concluído</option>
+                    <option value="Cancelado">Cancelado</option>
+                  </select>
+                </div>
+                <div>
+                  <button>EDITAR</button>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
       </div>
-      {/* <p>VALOR DO STATE - {produto}</p>
-      <button onClick={() => setProduto("RÁDIO")}>ALTERANDO O VALOR DO STATE</button> */}
     </>
   );
 }

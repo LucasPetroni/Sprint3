@@ -1,17 +1,23 @@
 import { Link } from "react-router-dom";
 import { ListaProdutos } from "../../components/ListaProdutos";
 import { AiFillEdit as Editar } from "react-icons/ai";
-import { AiFillDelete as Excluir } from "react-icons/ai";
 import "../../styles/chamados.css";
+
+function getClassBySituacao(situacao) {
+  switch (situacao) {
+    case "Em Andamento":
+      return "em-andamento";
+    case "Cancelado":
+      return "cancelado";
+    case "Concluído":
+      return "concluido";
+    default:
+      return "";
+  }
+}
 
 export default function Produtos() {
   document.title = "Produtos";
-
-  const estiloTabela = {
-    borderCollapse: "collapse",
-    margin: "0 auto",
-    border: "2px solid #ccc",
-  };
 
   return (
     <>
@@ -39,7 +45,9 @@ export default function Produtos() {
                   <img src={`${item.img}`} alt={`${item.desc}`} />
                 </td>
                 <td>{item.endereco}</td>
-                <td>{item.id}</td>
+                <td className={getClassBySituacao(item.situacao)}>
+                  {item.situacao}
+                </td>
                 <td>
                   <Link to={`/editar/produtos/${item.id}`}>
                     <Editar />

@@ -4,9 +4,14 @@
   box-sizing: border-box;
   text-decoration: none;
 }
-/* 
+
 .container {
   display: flex;
-  min-height: 1000vh;
+  height: 100vh;
   flex-direction: column;
+}
+/* 
+rodape {
+  position: absolute;
+  bottom: 0;
 } */
