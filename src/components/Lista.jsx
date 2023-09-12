@@ -12,15 +12,15 @@ export default function Lista() {
           <Link to="/chamados">Chamados</Link>
         </li>
         <li>
-          <Link to="/integrantes">
-            {" "}
-            <img
-              src="../public/pessoa.png"
-              alt="imagem de usuario"
-              id="img-usuario"
-              style={{ width: "100%", height: "30px" }}
-            />{" "}
-          </Link>
+          <Link to="/integrantes">Integrantes</Link>
+        </li>
+        <li>
+          <img
+            src="../public/pessoa.png"
+            alt="imagem de usuario"
+            id="img-usuario"
+            style={{ width: "100%", height: "30px" }}
+          />
         </li>
       </Cabecalho>
     </>

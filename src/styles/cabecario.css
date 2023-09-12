@@ -11,6 +11,7 @@ header {
   margin-right: 15%;
 }
 .nav-header ul {
+  font-weight: bold;
   list-style: none;
   padding: 0;
   margin: 0;
