@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ListaProdutos } from "../../components/ListaProdutos";
+import { ListaChamados } from "../../components/ListaChamados";
 import { AiFillEdit as Editar } from "react-icons/ai";
 import "../../styles/chamados.css";
 
@@ -16,8 +16,8 @@ function getClassBySituacao(situacao) {
   }
 }
 
-export default function Produtos() {
-  document.title = "Produtos";
+export default function Chamados() {
+  document.title = "Chamados";
 
   return (
     <>
@@ -36,7 +36,7 @@ export default function Produtos() {
               <th>EDITAR</th>
             </tr>
 
-            {ListaProdutos.map((item, indice) => (
+            {ListaChamados.map((item, indice) => (
               <tr key={indice}>
                 <td>{item.id}</td>
                 <td>{item.nome}</td>
@@ -49,7 +49,7 @@ export default function Produtos() {
                   {item.situacao}
                 </td>
                 <td>
-                  <Link to={`/editar/produtos/${item.id}`}>
+                  <Link to={`/editar/chamados/${item.id}`}>
                     <Editar />
                   </Link>
                 </td>

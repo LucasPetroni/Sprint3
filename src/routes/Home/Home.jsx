@@ -23,7 +23,7 @@ export default function Home() {
               modal de guincho incorreto.
             </p>
             <button>
-              <Link to="/produtos">Chamados</Link>
+              <Link to="/chamados">Chamados</Link>
             </button>
           </div>
         </main>
