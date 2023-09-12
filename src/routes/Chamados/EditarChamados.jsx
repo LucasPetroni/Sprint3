@@ -1,52 +1,52 @@
 import { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { ListaProdutos } from "../../components/ListaProdutos";
+import { ListaChamados } from "../../components/ListaChamados";
 import "../../styles/editarChamado.css";
 
-export default function EditarProdutos() {
-  document.title = "Editar Produtos";
+export default function EditarChamados() {
+  document.title = "Editar Chamados";
 
   const navigate = useNavigate();
 
   const { id } = useParams();
 
-  const produtoFiltrado = ListaProdutos.filter(
+  const chamadoFiltrado = ListaChamados.filter(
     (item) => item.id === parseInt(id)
   )[0];
 
-  const [produto, setProduto] = useState({
-    id: produtoFiltrado.id,
-    nome: produtoFiltrado.nome,
-    desc: produtoFiltrado.desc,
-    img: produtoFiltrado.img,
-    endereco: produtoFiltrado.endereco,
-    situacao: produtoFiltrado.situacao,
+  const [chamado, setChamado] = useState({
+    id: chamadoFiltrado.id,
+    nome: chamadoFiltrado.nome,
+    desc: chamadoFiltrado.desc,
+    img: chamadoFiltrado.img,
+    endereco: chamadoFiltrado.endereco,
+    situacao: chamadoFiltrado.situacao,
   });
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-    setProduto({ ...produto, [name]: value });
+    setChamado({ ...chamado, [name]: value });
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
     let indice;
 
-    ListaProdutos.forEach((item, index) => {
+    ListaChamados.forEach((item, index) => {
       if (item.id == produto.id) {
         indice = index;
       }
     });
 
-    ListaProdutos.splice(indice, 1, produto);
+    ListaChamados.splice(indice, 1, produto);
 
-    navigate("/produtos");
+    navigate("/chamados");
   };
 
   return (
     <>
-      <div className="editar-produto">
-        <div className="container-editarProduto">
+      <div className="editar-chamado">
+        <div className="container-editarChamado">
           <div class="container-tela">
             <h1>Editar Chamados</h1>
           </div>
@@ -54,7 +54,7 @@ export default function EditarProdutos() {
           <div>
             <form onSubmit={handleSubmit}>
               <fieldset>
-                <legend>Chamado ID: {produto.id}</legend>
+                <legend>Chamado ID: {chamado.id}</legend>
                 <div>
                   <label htmlFor="idNome">Nome</label>
                   <input
@@ -62,7 +62,7 @@ export default function EditarProdutos() {
                     name="nome"
                     id="idNome"
                     onChange={handleChange}
-                    value={produto.nome}
+                    value={chamado.nome}
                   />
                 </div>
                 <div>
@@ -72,7 +72,7 @@ export default function EditarProdutos() {
                     name="desc"
                     id="idDesc"
                     onChange={handleChange}
-                    value={produto.desc}
+                    value={chamado.desc}
                   />
                 </div>
                 <div>
@@ -82,7 +82,7 @@ export default function EditarProdutos() {
                     name="Img"
                     id="idImg"
                     onChange={handleChange}
-                    value={produto.img}
+                    value={chamado.img}
                   />
                 </div>
                 <div>
@@ -92,7 +92,7 @@ export default function EditarProdutos() {
                     name="endereco"
                     id="idendereco"
                     onChange={handleChange}
-                    value={produto.endereco}
+                    value={chamado.endereco}
                   />
                 </div>
                 <div>
@@ -101,7 +101,7 @@ export default function EditarProdutos() {
                     name="situacao"
                     id="idsituacao"
                     onChange={handleChange}
-                    value={produto.situacao}
+                    value={chamado.situacao}
                   >
                     <option value="Em Andamento">Em Andamento</option>
                     <option value="Concluído">Concluído</option>

@@ -1,4 +1,4 @@
-export const ListaProdutos = [
+export const ListaChamados = [
   {
     id: 121,
     nome: "Caio Boris",
