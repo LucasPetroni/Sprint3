@@ -49,7 +49,7 @@
   height: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 750px) {
   .container-footer {
     height: auto;
     flex-direction: column;

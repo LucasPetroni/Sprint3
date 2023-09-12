@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap");
 
-.editar-produto {
+.editar-chamado {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,7 +10,7 @@
 
 .container-tela {
   text-align: center;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 
 .container-tela h1 {
@@ -18,47 +18,47 @@
   padding-bottom: 10%;
 }
 
-.container-editarProduto {
-  background-color: #f4f4f4; 
-  border: 2px solid #00a1fc; 
-  border-radius: 10px; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  padding: 20px; 
-  max-width: 600px; 
-  width: 90%; 
+.container-editarChamado {
+  background-color: #f4f4f4;
+  border: 2px solid #00a1fc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 600px;
+  width: 90%;
 }
 
-.container-editarProduto form {
-  width: 100%; /* Formulário ocupando 100% da largura */
+.container-editarChamado form {
+  width: 100%;
 }
 
-.container-editarProduto fieldset {
-  border: none; /* Removendo a borda do fieldset */
+.container-editarChamado fieldset {
+  border: none;
   padding: 0;
 }
 
-.container-editarProduto legend {
+.container-editarChamado legend {
   font-weight: bold;
-  color: #000000; /* Cor do título do fieldset */
-  margin-bottom: 10px; /* Espaçamento abaixo do título do fieldset */
+  color: #000000;
+  margin-bottom: 10px;
   font-size: 20px;
 }
 
-.container-editarProduto div > div {
+.container-editarChamado div > div {
   margin-bottom: 10px;
 }
 
-.container-editarProduto input,
-.container-editarProduto select {
-  width: calc(100% - 22px); /* Largura total menos o espaçamento do padding */
+.container-editarChamado input,
+.container-editarChamado select {
+  width: calc(100% - 22px);
   padding: 10px;
   margin: 3px 0 10px 0;
-  border: 1px solid #ccc; /* Borda cinza */
-  border-radius: 5px; /* Cantos arredondados */
-  box-sizing: border-box; /* O padding não aumenta a largura total */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
 }
 
-.container-editarProduto button {
+.container-editarChamado button {
   width: 100%;
   padding: 10px 20px;
   margin-top: 10px;
@@ -72,13 +72,12 @@
   font-family: "Roboto", sans-serif;
 }
 
-
-.container-editarProduto button:hover {
-  background-color: #007bbd; /* Cor quando o botão é hover */
+.container-editarChamado button:hover {
+  background-color: #007bbd;
 }
 
 @media (max-width: 600px) {
-  .container-editarProduto {
-    width: 100%; /* Altera a largura para 100% em telas pequenas */
+  .container-editarChamado {
+    width: 100%;
   }
 }
