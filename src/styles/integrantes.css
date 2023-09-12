@@ -1,0 +1,34 @@
+
+
+.integrantes-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 2%;
+}
+
+.integrante-card {
+  text-align: center;
+  margin: 15px;
+}
+
+.foto-integrante {
+  border-radius: 50%;
+  width: 100px; /* Ajuste conforme necessário */
+  height: 100px; /* Ajuste conforme necessário */
+  object-fit: cover;
+  border: 2px solid #fff; /* Borda branca ao redor da foto */
+}
+
+.info-integrante {
+  margin-top: 10px;
+}
+
+.nome-integrante {
+  font-weight: bold;
+  display: block;
+}
+
+.rm-integrante {
+  color: #555;
+}
