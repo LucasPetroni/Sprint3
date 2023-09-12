@@ -1,8 +1,12 @@
-# React + Vite
+# Sprint 3
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é o repositório da Sprint 3, que faz parte do projeto de integração do chat bot via WhatsApp para a Porto Seguro. O site contido aqui será utilizado na apresentação final.
 
-Currently, two official plugins are available:
+Ele permitirá à Porto Seguro visualizar e gerenciar os chamados diretamente através do chat bot integrado com o WhatsApp.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Integrantes
+
+- Lucas Petroni - 97861
+- Matheus Paulo Lima Delgado - 552189
+- Caio Boris - 552496
+- Nathaly Oliveira - 552538
