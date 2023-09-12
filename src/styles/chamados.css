@@ -31,7 +31,7 @@ h1 {
 
 .Tabela img {
   max-width: 100px;
-  height: auto; /* Adiciona uma altura automática para manter a proporção */
+  height: auto; 
 }
 
 .Tabela a {
@@ -57,11 +57,11 @@ h1 {
 @media screen and (max-width: 768px) {
   .Tabela th,
   .Tabela td {
-    font-size: 14px; /* Reduz o tamanho do texto em telas menores */
-    padding: 8px; /* Reduz o espaçamento interno */
+    font-size: 14px; 
+    padding: 8px; 
   }
 
   .Tabela img {
-    max-width: 80px; /* Reduz o tamanho máximo da imagem */
+    max-width: 80px; 
   }
 }
