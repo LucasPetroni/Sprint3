@@ -14,10 +14,10 @@
 
 .foto-integrante {
   border-radius: 50%;
-  width: 100px; /* Ajuste conforme necessário */
-  height: 100px; /* Ajuste conforme necessário */
+  width: 100px; 
+  height: 100px; 
   object-fit: cover;
-  border: 2px solid #fff; /* Borda branca ao redor da foto */
+  border: 2px solid #fff; 
 }
 
 .info-integrante {

@@ -6,19 +6,19 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: 190px;
+
   
 }
 
 .conteudo img {
-  width: 25%; /* A imagem ocupará 100% da largura do seu contêiner */
+  width: 25%; 
   max-width: 800px;
 }
 
 .conteudo p {
   width: 50%;
-  margin: 20px 0; /* Adiciona um espaço entre a imagem e o parágrafo */
-  font-size: 15px; /* Tamanho da fonte do parágrafo */
+  margin: 20px 0; 
+  font-size: 15px; 
   font-family: "Roboto", sans-serif;
 }
 

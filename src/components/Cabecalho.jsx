@@ -6,7 +6,6 @@ export default function Cabecalho(props) {
     <>
       <header>
         <img
-          // src="../public/logo-agile-modal.png"
           src="./logo-agile-modal.png"
           alt="Logo agile modal"
           id="img-header"
