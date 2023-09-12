@@ -9,15 +9,18 @@ export default function Lista() {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/produtos">Chamados</Link>
+          <Link to="/chamados">Chamados</Link>
         </li>
         <li>
-          <img
-            src="../public/pessoa.png"
-            alt="imagem de usuario"
-            id="img-usuario"
-            style={{ width: "100%", height: "30px" }}
-          />
+          <Link to="/integrantes">
+            {" "}
+            <img
+              src="../public/pessoa.png"
+              alt="imagem de usuario"
+              id="img-usuario"
+              style={{ width: "100%", height: "30px" }}
+            />{" "}
+          </Link>
         </li>
       </Cabecalho>
     </>

@@ -2,13 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 
-
 //Bloco de rotas
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import EditarProdutos from "./routes/Chamados/EditarChamados.jsx";
 import Home from "./routes/Home/Home.jsx";
-import Produtos from "./routes/Chamados/Chamados.jsx";
 import Error404 from "./routes/Erro/Error404.jsx";
+import Integrantes from "./routes/Integrantes/Integrantes.jsx";
+import EditarChamados from "./routes/Chamados/EditarChamados.jsx";
+import Chamados from "./routes/Chamados/Chamados.jsx";
 
 const router = createBrowserRouter([
   {
@@ -17,13 +17,12 @@ const router = createBrowserRouter([
     errorElement: <Error404 />,
     children: [
       { path: "/", element: <Home /> },
-      { path: "/chamados", element: <Produtos /> },
-      { path: "/editar/chamados/:id", element: <EditarProdutos /> },
+      { path: "/integrantes", element: <Integrantes /> },
+      { path: "/chamados", element: <Chamados /> },
+      { path: "/editar/chamados/:id", element: <EditarChamados /> },
     ],
   },
 ]);
-
-//Bloco de rota
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

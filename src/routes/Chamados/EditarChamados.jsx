@@ -33,12 +33,12 @@ export default function EditarChamados() {
     let indice;
 
     ListaChamados.forEach((item, index) => {
-      if (item.id == produto.id) {
+      if (item.id == chamado.id) {
         indice = index;
       }
     });
 
-    ListaChamados.splice(indice, 1, produto);
+    ListaChamados.splice(indice, 1, chamado);
 
     navigate("/chamados");
   };

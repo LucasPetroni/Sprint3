@@ -9,18 +9,19 @@ export default function Home() {
           <div className="conteudo">
             <img src="../public/logo-agile-modal.png" alt="Logo Agile Modal" />
             <p>
-              O sistema proposto pela AGILE MODAL tem como objetivo resolver os
-              desafios identificados durante o Challenge 2023 da Porto Seguro.
-              Ele visa melhorar a consistência e rigor na captação de
-              informações para a solicitação de modais adequados à demanda,
-              abordar a falta de uma modalidade específica para veículos
-              modificados. A solução consiste em desenvolver um sistema de
-              chamados inteligente para a empresa Porto Seguro. O sistema
-              permitirá o controle eficiente e organizado dos serviços de
-              guincho prestados aos segurados, melhorando o processo de
-              atendimento e proporcionando uma experiência melhor para os
-              clientes e reduzindo possíveis retrabalhos em casos de envio do
-              modal de guincho incorreto.
+              A solução proposta pela AGILE MODAL visa resolver os desafios
+              identificados no Challenge 2023 da Porto Seguro. Ela busca
+              aprimorar a consistência e precisão na coleta de informações para
+              a solicitação de modais adequados à demanda, incluindo veículos
+              modificados. Consiste no desenvolvimento de um sistema de chamados
+              inteligente para a Porto Seguro, proporcionando um controle eficaz
+              e organizado dos serviços de guincho oferecidos aos segurados.
+              Isso resultará em uma melhoria no processo de atendimento, uma
+              experiência aprimorada para os clientes e a redução de possíveis
+              retrabalhos decorrentes do envio incorreto do modal de guincho. O
+              site contará com integração de gerenciamento de chamados via
+              chatbot no WhatsApp, facilitando a visualização e modificação dos
+              registros pela equipe da Porto.
             </p>
             <button>
               <Link to="/chamados">Chamados</Link>
