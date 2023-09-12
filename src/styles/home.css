@@ -11,14 +11,14 @@
 }
 
 .conteudo img {
-  width: 25%;
+  width: 25%; /* A imagem ocupará 100% da largura do seu contêiner */
   max-width: 800px;
 }
 
 .conteudo p {
   width: 50%;
-  margin: 20px 0;
-  font-size: 15px;
+  margin: 20px 0; /* Adiciona um espaço entre a imagem e o parágrafo */
+  font-size: 15px; /* Tamanho da fonte do parágrafo */
   font-family: "Roboto", sans-serif;
 }
 

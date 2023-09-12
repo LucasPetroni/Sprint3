@@ -24,23 +24,23 @@
   border-radius: 10px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   padding: 20px; 
-  max-width: 600px; 
-  width: 90%;
+  max-width: 600px; /* Largura máxima do conteúdo */
+  width: 90%; /* Largura de 90% da tela */
 }
 
 .container-editarProduto form {
-  width: 100%; 
+  width: 100%; /* Formulário ocupando 100% da largura */
 }
 
 .container-editarProduto fieldset {
-  border: none;
+  border: none; /* Removendo a borda do fieldset */
   padding: 0;
 }
 
 .container-editarProduto legend {
   font-weight: bold;
-  color: #000000;
-  margin-bottom: 10px;
+  color: #000000; /* Cor do título do fieldset */
+  margin-bottom: 10px; /* Espaçamento abaixo do título do fieldset */
   font-size: 20px;
 }
 
@@ -50,12 +50,12 @@
 
 .container-editarProduto input,
 .container-editarProduto select {
-  width: calc(100% - 22px);
+  width: calc(100% - 22px); /* Largura total menos o espaçamento do padding */
   padding: 10px;
   margin: 3px 0 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
+  border: 1px solid #ccc; /* Borda cinza */
+  border-radius: 5px; /* Cantos arredondados */
+  box-sizing: border-box; /* O padding não aumenta a largura total */
 }
 
 .container-editarProduto button {
@@ -74,11 +74,11 @@
 
 
 .container-editarProduto button:hover {
-  background-color: #007bbd;
+  background-color: #007bbd; /* Cor quando o botão é hover */
 }
 
 @media (max-width: 600px) {
   .container-editarProduto {
-    width: 100%;
+    width: 100%; /* Altera a largura para 100% em telas pequenas */
   }
 }
