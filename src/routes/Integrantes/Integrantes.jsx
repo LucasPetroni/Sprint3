@@ -9,7 +9,6 @@ export default function Integrantes() {
       foto: "../public/matheusLima.jpeg",
     },
     { nome: "Lucas Petroni", rm: "97861", foto: "../public/lucasPetroni.jpeg" },
-
     { nome: "Caio Boris", rm: "552496", foto: "../public/caioBoris.jpeg" },
     {
       nome: "Nathaly Oliveira",
@@ -20,6 +19,16 @@ export default function Integrantes() {
 
   return (
     <>
+      <div className="repo-links">
+        <a
+          href="https://github.com/LucasPetroni/Sprint3"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="rep-link"
+        >
+          Link para o Repositório
+        </a>
+      </div>
       <div className="integrantes-container">
         {integrantes.map((integrante, index) => (
           <div key={index} className="integrante-card">
