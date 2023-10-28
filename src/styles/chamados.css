@@ -38,19 +38,19 @@ h1 {
   color: #000;
 }
 
-.Tabela td.em-andamento {
+.Tabela td.finalizado {
   font-weight: bold;
-  color: rgb(0, 166, 231);
+  color: #21da0d; /* ou a cor que você preferir */
 }
 
-.Tabela td.cancelado {
+.Tabela td.iniciado {
   font-weight: bold;
-  color: red;
+  color: rgb(0, 166, 231); /* ou a cor que você preferir */
 }
 
-.Tabela td.concluido {
+.Tabela td.processando {
   font-weight: bold;
-  color: #21da0d;
+  color: #ffa500; /* ou a cor que você preferir */
 }
 
 @media screen and (max-width: 768px) {

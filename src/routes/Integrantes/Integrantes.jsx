@@ -19,7 +19,7 @@ export default function Integrantes() {
 
   return (
     <>
-      <div className="repo-links">
+      {/* <div className="repo-links">
         <a
           href="https://github.com/LucasPetroni/Sprint3"
           target="_blank"
@@ -28,7 +28,7 @@ export default function Integrantes() {
         >
           Link para o Repositório
         </a>
-      </div>
+      </div> */}
       <div className="integrantes-container">
         {integrantes.map((integrante, index) => (
           <div key={index} className="integrante-card">
